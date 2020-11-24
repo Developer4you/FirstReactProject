@@ -1,0 +1,7 @@
+.header {
+    grid-area: h;
+    background-image: url("https://images.wallpaperscraft.ru/image/vodnaia_glad_riad_bliki_160452_1920x1080.jpg") ;
+}
+.header img {
+    width: 150px;
+}
