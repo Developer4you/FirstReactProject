@@ -12,7 +12,8 @@ height: 50px;
 .title {
     vertical-align: top;
     display:inline-block;
-    width: 96%;
+    width: 50%;
     text-align: center;
     margin-top: 15px;
+    background-color: #d41616;
 }
