@@ -4,18 +4,18 @@ import Post from './Post/Post';
 
 const MyPosts = (props) => {
     let postsElements =
-        props.posts.map(post => <Post message={post.message}
-                                  likesCount={post.likesCount}/>)
+        props.posts.map( p => <Post message={p.message}
+                                    likesCount={p.likesCount}/>);
 
     let newPostElement = React.createRef();
 
-    let addPosts = () => {
-        props.dispatch({type:'ADD-POST'})
+    let onAddPost = () => {
+        props.addPost();
     }
 
     let onPostChange = () =>{
       let text = newPostElement.current.value;
-        props.dispatch({type:'UPDATE-NEW-POST-TEXT', newText:text})
+        props.updateNewPostText(text);
     }
 
     return <div className={s.postsBlock}>
@@ -26,7 +26,7 @@ const MyPosts = (props) => {
                            value={props.newPostText}/>
             </div>
             <div>
-                <button onClick={ addPosts }>Add post</button>
+                <button onClick={ onAddPost }>Add post</button>
             </div>
         </div>
         <div className={s.posts}>
