@@ -3,11 +3,16 @@
     height: 100px;
 }
 
-.userPost{
+.userPost {
     display: grid;
     background-color: #efeded;
     grid-template-columns: 1fr 2fr 2fr;
     margin: 10px;
     padding: 5px;
     box-shadow: 0 0 5px 2px;
+}
+
+.selectedPage {
+    font-weight: bold;
+    background-color: #ff0000;
 }
