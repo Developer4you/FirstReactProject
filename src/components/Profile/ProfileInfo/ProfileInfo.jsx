@@ -1,13 +1,16 @@
 import React from 'react';
 import s from './ProfileInfo.module.css';
+import Preloader from "../../common/Preloader/Preloader";
 
-const ProfileInfo = () => {
+const ProfileInfo = (props) => {
+    if (!props.profile) {
+        return <Preloader />
+    }
+
     return <div>
-        <div>
-            <img src='http://bgfons.com/uploads/waves/waves_texture2412.jpg'/>
-        </div>
+
         <div className={s.descriptionBlock}>
-            ava + descrition
+            <img src={props.profile.photos.large}/>
         </div>
 
     </div>
