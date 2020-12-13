@@ -12,7 +12,7 @@ let initialState = {
     profile: null
 };
 
-const profileReduser = (state = initialState, action) => {
+const profileReducer = (state = initialState, action) => {
     switch (action.type) {
         case ADD_POST: {
             let newPost = {
@@ -44,4 +44,4 @@ export const addPostActionCreator = () => ({type: ADD_POST})
 export const setUserProfile = (profile) => ({type:SET_USER_PROFILE, profile})
 export const updateNewPostTextActionCreator = (text) =>
     ({type: UPDATE_NEW_POST_TEXT, newText: text})
-export default profileReduser;
+export default profileReducer;

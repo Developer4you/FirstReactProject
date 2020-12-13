@@ -17,3 +17,11 @@ height: 50px;
     margin-top: 15px;
     background-color: #d41616;
 }
+
+.loginBlock {
+    float: right;
+}
+
+.loginBlock a {
+    color: white;
+}
