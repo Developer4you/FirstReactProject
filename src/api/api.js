@@ -17,11 +17,14 @@ export const usersAPI = {
     }
 }
 
-/*export const profileAPI = {
+export const profileAPI = {
     getProfile(userId) {
         return instans.get(`profile/`+userId)
             .then(response => {
                 return response.data;
             });
     }
-}*/
+}
+
+
+
